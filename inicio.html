@@ -2,9 +2,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos.css">
     <title>Agus_cardetail</title>
 </head>
 <body>
+    <header>
+    <div class="link">
+        <a href="inicio.html">Inicio</a>
+        <a href="inicio.html">Nosotros</a>
+        <a href="inicio.html">Tienda</a>
+    </div>
+    <div class="carrito-container">
+        <img src="/static/img/carrito-pro.png" alt="Carrito Agus Cardetail" id="icon-carrito">
+        <span id="contador-carrito">0</span>
+    </div>
+</header>
+
+<div id="cont_productos"></div>
+
+<div id="ventana_carrito" style="display: none;">
+    <h2>Tu Carrito</h2>
+    <div id="lista-carrito"></div>
+    <button id="btn-cerrar">Cerrar</button>
+    <button id="btn-comprar">comprar</button>
+</div>
+    
     <script src="java.js"></script>
 </body>
 </html>
