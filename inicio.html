@@ -3,6 +3,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="estilos.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/toastify-js/src/toastify.min.css">
     <title>Agus_cardetail</title>
 </head>
 <body>
@@ -21,12 +22,19 @@
 <div id="cont_productos"></div>
 
 <div id="ventana_carrito" style="display: none;">
-    <h2>Tu Carrito</h2>
+    <div class="titulo-contenedor">
+        <img src="static/img/carrito-pro.png" alt="Icono" class="img-titulo-carrito">
+        <h2 id="titulo-carrito">Tu Carrito</h2>
+    </div>
     <div id="lista-carrito"></div>
-    <button id="btn-cerrar">Cerrar</button>
-    <button id="btn-comprar">comprar</button>
+    <div class="contenedor-botones-finales">
+        <button id="btn-cerrar">Cerrar</button>
+        <button id="btn-comprar">Comprar</button>
+    </div>
 </div>
     
     <script src="java_sc.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 </html>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>

@@ -89,7 +89,13 @@ header a {
     display: flex;
     align-items: center;
 }
-
+.img-producto {
+    width: 100%;       
+    height: 180px;     
+    object-fit: contain; 
+    margin-bottom: 15px;
+    border-radius: 8px;
+}
 /* El circulito con el número */
 #contador-carrito {
     position: absolute;
@@ -102,14 +108,131 @@ header a {
     font-size: 12px;
     font-weight: bold;
 }
+
 #ventana_carrito {
     position: fixed;
-    top: 10%;
-    right: 5%;
+    top: 9.5%;
+    right: 0;
     background: white;
     border: 2px solid #004289; 
     padding: 20px;
     z-index: 100;
     box-shadow: 0 0 15px rgba(0,0,0,0.3);
     border-radius: 10px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    max-height: 80vh;
 }
+#lista-carrito {
+    margin-bottom: 15px;
+}
+.lista_carrito {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px solid #eee;
+}
+.btn-quitar {
+    margin: 5px;
+    background-color: #830404;
+
+    color: white;
+    border: 0.5px solid black;
+    border-radius: 50%;
+    width: 25px;
+    height: 25px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: 0.3s;
+    text-align: center;
+}
+
+.btn-quitar:hover {
+    background-color: #da0202;
+}
+
+#btn-comprar {
+    background-color: #015c27; 
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+#btn-comprar:hover {
+    background-color: #219150;
+}
+
+#btn-cerrar{
+    background-color: #830404;
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+#btn-cerrar:hover {
+    background-color: #da0202;
+}
+
+#btn-limpiar{
+    background-color: #830404;
+    
+    color: white;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background 0.3s;
+}
+
+#btn-limpiar:hover{
+    background-color: #da0202;
+}
+
+.titulo-contenedor {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #dee2e6; 
+}
+
+
+.img-titulo-carrito {
+    width: 40px;
+    height: auto;
+    opacity: 0.6; 
+    margin-bottom: 10px;
+}
+
+
+#titulo-carrito {
+    color: #6c757d; 
+    font-size: 1.5rem;
+    font-weight: 400; 
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin: 0;
+}
+
+.toast-personalizado {
+    margin-top: 50px ; 
+    pointer-events: all;
+}
+
